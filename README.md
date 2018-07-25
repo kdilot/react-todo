@@ -1,3 +1,6 @@
 # TODO List
 
-< a
+- Add
+- Delete
+- Change List Color
+- Check
