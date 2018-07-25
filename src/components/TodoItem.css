@@ -1,0 +1,47 @@
+.todo-item {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.15s;
+    user-select: none;
+  }
+  
+  .todo-item:hover {
+    background: #ACF2BE;
+  }
+  
+  /* mouse on {todo-item} only show {.remove} */
+  .todo-item:hover .remove {
+    opacity: 1;
+  }
+  
+  .todo-item + .todo-item {
+    border-top: 1px solid #C2FFDC;
+  }
+  
+  
+  .remove {
+    margin-right: 1rem;
+    color: #e64980;
+    font-weight: 600;
+    opacity: 0;
+  }
+  
+  .todo-text {
+    flex: 1; /* fill every empty space without checkbox and X */
+    word-break: break-all;
+  }
+  
+  .checked {
+    text-decoration: line-through;
+    color: #607F6E;
+  }
+  
+  .check-mark {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    margin-left: 1rem;
+    color: #1D733B;
+    font-weight: 800;
+  }
